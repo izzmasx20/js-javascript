@@ -1,110 +1,108 @@
-// strings - are text characters in double or single quotes
-const firstName = "John";
-const lastName = "Doe";
-const middleName = "Olaoluwa";
+// CONDITIONAL STATEMENT
+// If statement 
 
-// string properties- length
-console.log(firstName.length, middleName.length);
-// string concatenation ( joining of strings + a+b)
+console.log('conditional statement');
+// if (condition){
+//action
+//line of code}
 
-const fullName = firstName + " " + lastName;
-console.log(fullName);
+if (1<2) {
+    console.log('ola');
+    
+}
 
-console.log(fullName.length);
+let balance = 6000;
+let amount = 2000;
 
-// strings methods- theyv are built in js fuctions that can perform on strings
-// touppercase, tolowercase
-console.log(fullName.toUpperCase());
-console.log(fullName.toLowerCase());
+if (balance >= amount) {
+    balance -= amount;
+    console.log('transaction succesful, balance is ' + balance);
 
-// startswith, endswith, includes
-console.log(fullName.startsWith("Joh"));
-console.log(fullName.endsWith("oe"));
-console.log(fullName.includes("n D"));
+    // determine if thr password is long enough (>= 10)
+    // improve your logic check if the password contains '#' - good password
+    const password = "#password123445";
 
-// replace and replaceAll
-console.log(fullName.replace("o", "#"));
-console.log(fullName.replaceAll("o", "#"));
+    if (password.length >= 10 && password. includes("#")){
+        console.log("password is good enough");
+        
+    }
+}
+// log to the console if a users age is eligible to vote
+const age = 12
+if (age >= 18 ){
+    console.log('you are eligible to vote');
+    
+}
 
-const myEmail = "atijosanmichaelolaoluwa@gmail.com";
-console.log(myEmail.toUpperCase());
-console.log(myEmail.length);
-console.log(myEmail.endsWith("google.com"));
-console.log(myEmail.replace("@", "*"));
+if (9 > 7){
+    console.log('yes');
+} else {
+    console.log('no');
+    
+}
 
-// charAt, indexOf, lastIndexOf
-console.log(myEmail.charAt(2));
-console.log(myEmail.indexOf("o"));
-console.log(myEmail.lastIndexOf("o"));
+if (balance >= amount) {
+    balance -= amount;
+    console.log('transaction succesful, balance is ' + balance);}
+else {
+    console.log('Insufficient Funds');
+    
+}
+// write and if else statement to check if a number is a positive or not
+const num = 10
+if (num > 0){
+    console.log('positive');
+} else {
+    console.log('negative');
+}
 
-// concat, trim, slice, substring, substr
+// write an if else statement to ndetermine if a number is odd or even 
 
-// trims remove whitespace
-console.log(fullName.concat("is my name"));
+if (num % 2 === 0 ){
+    console.log('Evenn Number');
+} else{
+    console.log('Odd number');
+    
+}
 
-const username = "     user001";
-console.log(username);
-console.log(username.trim());
-console.log(username.trimStart());
-console.log(username.trimEnd());
+// multiple else if 
+// overpop[ulated >= 300 , underpopulated <= 50 and balance population > 50 and < 3oo
+ const cencusResult = 500
 
-// extract portions of a string
-const surName = "brooke";
-// slice, substring (start, end (none-))
-console.log(surName.slice(2, 5)); // ook
-console.log(surName.substring(1));
+ if (cencusResult>= 500) {
+    console.log('overpopulated');
+    
+ } else if (cencusResult<= 50) {
+    console.log('under populated');
+    
+ } else {
+    console.log('balanced population');
+    
+ }
 
-// substr (start, number of characters)
-console.log(surName.substring(2, 2));
+ // lovery system for a company a b c(winner) d
+ const useerchoice = 'a';
 
-// concatenation
-const author = "Chinua Achebe";
-const bookTitle = "Things Fall Apart";
-const yearPublished = 1997;
+ if (useerchoice === 'c'){
+    console.log('congratulation');
+    
+ } else{
+    console.log('try again');
+    
+ }
 
-// the book things fall apart written by chinua achebe was published in the year 1997
-
-// template literals `${varName}`
-const summary = `the book ${bookTitle} was authored by ${author.toUpperCase()}`;
-console.log(summary);
-
-// chinua Achebe wrote the book things fall apart
-const summary2 = `${author} wrote the book ${bookTitle}`;
-
-console.log(summary2);
-
-// quote Tinubu said and i quote ' let the poor breathe'
-const quote = `Tinubu said and i quote 'let the poor breath`;
-console.log(quote);
-
-const helloWorld = "hello world";
-console.log(helloWorld.toUpperCase());
-
-const JAVASCRIPT = "javascript";
-console.log(JAVASCRIPT.toLowerCase());
-
-const hello = "H";
-console.log(hello.charAt(0));
-
-const HelloWorld = "World";
-console.log(HelloWorld.slice(0, 5));
-const cat = "I like Cats";
-console.log(cat);
-console.log(cat.replace("Cats", "Dogs"));
-
-const HelloW = "Hello";
-console.log(HelloW.startsWith("Hello"));
-
-const character = "sokratis papastathopoulos";
-console.log(character.length);
-
-const nickName = "Ola";
-console.log(nickName);
-
-let gunners = "Arsenal";
-console.log(gunners);
-
-// my name is Ola  and my favourite club is Arsenal
-
-const summary3 = `my name is ${nickName} and my favourite club is ${gunners}`;
-console.log(summary3);
+ // lottery system for a company 4 choices a (trip to dubai) b(try again) c(car) d(blender)
+const useerchoiceb = 'a';
+if (useerchoiceb === 'a') {
+    console.log('trip to dubai');
+    
+} else if ( useerchoiceb === 'c') {
+    console.log('car');
+    
+} else if (useerchoiceb === 'd') {
+    console.log('blender');
+    
+} else {
+    console.log('try again');
+    
+}
